@@ -2,6 +2,9 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
+import githubImage from "./images/github.png";
+import instagramImage from "./images/instagram.png";
+import twitterImage from "./images/twitter.png";
 
 function App() {
   function OnSubmitClicked() {
@@ -98,10 +101,32 @@ function App() {
 
         <br />
         <button style={{ marginTop: "30px" }} onClick={OnSubmitClicked}>
-          Submit
+          Show
         </button>
 
-        <p id="result"> the result will come here</p>
+        <p id="result"></p>
+
+        <footer>
+          <p>soumya ripan: </p>
+
+          <ul>
+            <li>
+              <a href="https://github.com/Soumya323">
+                <img src={githubImage} alt="github" />
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/Ripann_?t=8IMb-TON6SKeOCqh7DyWzg&s=09">
+                <img src={twitterImage} alt="twitter"></img>
+              </a>
+            </li>
+            <li>
+              <a href="/">
+                <img src={instagramImage} alt="instagram"></img>
+              </a>
+            </li>
+          </ul>
+        </footer>
       </div>
     </>
   );
